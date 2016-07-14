@@ -34,6 +34,7 @@ You'll need to set things up on bluemix to get credentials, but then you can cre
 
 * Improve the setup instructions
 * Switch from bootstrap to Contentful's CSS
+* Set up graphic and description for Appearance tab
 * Automated testing and continuous deployment
 
 [Contentful]: https://www.contentful.com/
