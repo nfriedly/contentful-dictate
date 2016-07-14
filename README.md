@@ -4,6 +4,8 @@ A UI Extension for [Contentful] that uses [IBM Watson Speech to Text] to enable 
 
 Designed to be hosted on [Bluemix].
 
+![screenshot](public/img/screenshot.png)
+
 ## Setup:
 
 There are a few different steps to getting this set up. You'll need accounts at [Contentful] and [Bluemix].
