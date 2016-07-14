@@ -13,7 +13,7 @@ The Deploy to Bluemix button completes steps 1-3 automatically:
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/nfriedly/contentful-dictate/)
 
 1. First create a Watson Speech to Text instance on Bluemix.
-2. Edit `manifest.yml to have a unique name and use the name of the Speech to Text service instance you created in step 1.
+2. Edit `manifest.yml` to have a unique name and use the name of the Speech to Text service instance you created in step 1.
 3. Upload your copy of the app via the [Cloud Foundry CLI](https://github.com/cloudfoundry/cli) tool:
 
   ```
