@@ -1,0 +1,31 @@
+{
+  "name": "contentful-dictate",
+  "version": "1.0.0",
+  "description": "A UI Extension for Contentful that uses IBM Watson Speech to Text to enable voice dictation",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nfriedly/contentful-dictate.git"
+  },
+  "author": "Nathan Friedly <http://nfriedly.com/>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nfriedly/contentful-dictate/issues"
+  },
+  "homepage": "https://github.com/nfriedly/contentful-dictate#readme",
+  "dependencies": {
+    "contentful-ui-extensions-sdk": "^2.0.1",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "express-browserify": "^1.0.2",
+    "jquery": "^3.1.0",
+    "vcap_services": "^0.2.0",
+    "watson-developer-cloud": "^1.12.2",
+    "watson-speech": "^0.19.1"
+  }
+}

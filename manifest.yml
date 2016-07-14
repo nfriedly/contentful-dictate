@@ -1,0 +1,13 @@
+---
+declared-services:
+  stt-service:
+    label: speech_to_text
+    plan: standard
+applications:
+- name: contentful-dictate
+  command: npm start
+  memory: 256M
+  services:
+  - stt-service
+  env:
+    NODE_ENV: production

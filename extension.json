@@ -1,0 +1,6 @@
+{
+  "id": "contentful-dictate",
+  "name": "Voice Dictation",
+  "src": "https://contentful-dictate.mybluemix.net/",
+  "fieldTypes": ["Text"]
+}
