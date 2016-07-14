@@ -32,6 +32,7 @@ You'll need to set things up on bluemix to get credentials, but then you can cre
 
 * Improve the setup instructions
 * Switch from bootstrap to Contentful's CSS
+* Automated testing and continuous deployment
 
 [Contentful]: https://www.contentful.com/
 [IBM Watson Speech to Text]: http://www.ibm.com/watson/developercloud/speech-to-text.html
