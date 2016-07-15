@@ -1,13 +1,20 @@
 "use strict";
 
+require('dotenv').load({silent: true}); // loads environment properties from a .env file for local development
+
 var express = require('express');
 var app = express();
 var expressBrowserify = require('express-browserify');
 var vcapServices = require('vcap_services');
 var extend = require('util')._extend;
 var watson = require('watson-developer-cloud');
+var secureOnly = require('express-secure-only');
 
-require('dotenv').load({silent: true}); // loads environment properties from a .env file for local development
+// Contentful UI is all HTTPS and Chrome also blocks microphone access on http (except localhost)
+// Bluemix provides https certificates & termination on *.mybluemix.net domains, so this is all you need
+if (app.get('env') === 'production') {
+    app.use(secureOnly());
+}
 
 app.set('view engine', 'ejs');
 
