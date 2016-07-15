@@ -13,6 +13,7 @@ var secureOnly = require('express-secure-only');
 // Contentful UI is all HTTPS and Chrome also blocks microphone access on http (except localhost)
 // Bluemix provides https certificates & termination on *.mybluemix.net domains, so this is all you need
 if (app.get('env') === 'production') {
+    app.enable('trust proxy');
     app.use(secureOnly());
 }
 
