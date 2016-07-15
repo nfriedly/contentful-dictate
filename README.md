@@ -8,7 +8,7 @@ Designed to be hosted on [Bluemix].
 
 ## Browser support
 
-Works in recent versions of Chrome and Firefox, and probably Edge (untested).
+Works in recent versions of Firefox, will work in Chrome with a small change (see #2), and probably works in Edge (untested).
 Does not work in current versions of Internet Explorer or Safari due to missing API support.
 
 ## Setup:
