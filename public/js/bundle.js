@@ -45,7 +45,7 @@ $button.click(function() {
     }
     isRecording = !isRecording;
     $btnText.text(isRecording ? 'Stop Dictation' : 'Start Dictation');
-    $button.toggleClass('btn-danger', isRecording).toggleClass('btn-primary', !isRecording);
+    $button.toggleClass('is-recording', isRecording);
 });
 
 var stream;
