@@ -6,6 +6,11 @@ Designed to be hosted on [Bluemix].
 
 ![screenshot](public/img/screenshot.png)
 
+## Browser support
+
+Works in recent versions of Chrome and Firefox, and possibly IE/Edge (untested).
+Does not work in Safari due to bugs in Safari's WebSocket implementation (as of v9.1.1).
+
 ## Setup:
 
 There are a few different steps to getting this set up. You'll need accounts at [Contentful] and [Bluemix].
@@ -24,7 +29,8 @@ The Deploy to Bluemix button completes steps 1-3 automatically:
   
   At this point, you should be able to hit the bluemix url and see a working instance of the widget.
 
-4. Edit the `extension.json` file with your server's url, and then follow [the guide] to create your own extension on Contentful.
+4. Edit the `extension.json` file with your server's url (be sure to use https - Bluemix provides this for all *.mybuemix.net domains.),
+   and then follow [the guide] to create your own extension on Contentful.
 
 ## Local testing
 
