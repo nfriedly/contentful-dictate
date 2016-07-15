@@ -8,8 +8,8 @@ Designed to be hosted on [Bluemix].
 
 ## Browser support
 
-Works in recent versions of Chrome and Firefox, and possibly IE/Edge (untested).
-Does not work in Safari due to bugs in Safari's WebSocket implementation (as of v9.1.1).
+Works in recent versions of Chrome and Firefox, and probably Edge (untested).
+Does not work in current versions of Internet Explorer or Safari due to missing API support.
 
 ## Setup:
 
