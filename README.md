@@ -35,6 +35,7 @@ You'll need to set things up on bluemix to get credentials, but then you can cre
 * Improve the setup instructions
 * Set up graphic and description for Appearance tab
 * Automated testing and continuous deployment
+* Switch to a multi-field-level extension that augments all existing text fields with a dictate button instead of being a seperate type of field
 
 [Contentful]: https://www.contentful.com/
 [IBM Watson Speech to Text]: http://www.ibm.com/watson/developercloud/speech-to-text.html
