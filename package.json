@@ -24,7 +24,6 @@
     "express": "^4.14.0",
     "express-browserify": "^1.0.2",
     "express-secure-only": "^0.2.1",
-    "jquery": "^3.1.0",
     "vcap_services": "^0.2.0",
     "watson-developer-cloud": "^1.12.2",
     "watson-speech": "^0.19.1"

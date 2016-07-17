@@ -21,7 +21,7 @@ app.set('view engine', 'ejs');
 
 // automatically bundle the front-end js on the fly
 // note: this should come before the express.static since bundle.js is in the public folder
-app.get('/js/bundle.js', expressBrowserify('./public/js/bundle.js', {
+app.get('/js/bundle.js', expressBrowserify('./public/js/dictation-textarea.js', {
     watch: (app.get('env') === 'development')
 }));
 
