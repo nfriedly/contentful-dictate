@@ -38,6 +38,7 @@ You'll need to set things up on bluemix to get credentials, but then you can cre
 
 ## Todo
 
+* Automatically switch Watson locale to match Contentful locale
 * Improve the setup instructions
 * Set up graphic and description for Appearance tab
 * Automated testing and continuous deployment
