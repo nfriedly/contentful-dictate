@@ -21,7 +21,13 @@ contentful.getText().then(function(text) {
 });
 
 // setup the locale
-contentful.getLocale().then(transcriber.setLocale.bind(transcriber));
+contentful.getLocale()
+    .then(transcriber.setLocale.bind(transcriber))
+    .then(function(status) {
+        // todo: call it out of the watson locale doesn't match the contentful locale
+        // consider hiding it in other cases once the issue with contentful initially returning the previous locale is resolved
+        $('.locale').text(`(${status.watsonLocale})`);
+    });
 
 function handleTextChange() {
     contentful.setText($textarea.val());

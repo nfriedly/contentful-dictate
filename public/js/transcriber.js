@@ -38,10 +38,11 @@ module.exports = class Transcriber {
      * This is a "best effort" function - it first attempts an exact match, then a "first 2 letter match" (e.g. es_MX might become es_ES)
      * If no match is found, the service defaults to an en_US model.
      *
-     * @param {String} locale - en-US, en-GB, es-MX, etc.
+     * @param {String} locale - The contentful locale en-US, en-GB, es-MX, etc.
+     * @return {Promise<Object>} - Returns a promise that resolves to an object with `contentfulLocale` and `watsonLocale` keys
      */
     setLocale(locale) {
-        getModels({token: this.token}).then( models => {
+        return getModels({token: this.token}).then( models => {
             // The Speech to Text service supports both broadband and narrowband models.
             // Broadband is more appropriate here (narrowband is mainly for telephones)
             models = models.filter(model => model.name.includes('Broadband'));
@@ -53,6 +54,10 @@ module.exports = class Transcriber {
             if (model) {
                 this.model_id = model.name;
             }
+            return {
+                contentfulLocale: locale,
+                watsonLocale: this.model_id.substr(0,5) // e.g. just the "en-US part of "en-US_BroadbandModel"
+            };
         });
     }
 };
