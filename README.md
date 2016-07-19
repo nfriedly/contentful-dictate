@@ -15,7 +15,7 @@ Does not work in current versions of Internet Explorer or Safari due to missing 
 
 This extension attempts to match the desired locale, falling back to a language-only match and then finally `en_US` if no sutable match is found.
 
-Watson Speech to Text currently supports English, French, Spanish,
+Watson Speech to Text currently supports English, French, Spanish, Japanese, Portuguese, and Chinese.
 
 ## Setup:
 
