@@ -8,7 +8,7 @@ const Transcriber = require('./transcriber');
 
 const $textarea = $('textarea');
 const $button = $('button');
-const $btnText = $button.find('span');
+const $btnText = $('.btn-text');
 
 // Token is currently set in a global variable in index.ejs
 // (it's normally loaded over an AJAX request, but that was giving me CORS trouble that I haven't taken the time to debug.)
